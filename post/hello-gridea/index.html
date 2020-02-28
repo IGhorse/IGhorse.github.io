@@ -84,7 +84,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1582888929296" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1582889612345" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -103,7 +103,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1582888929296" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1582889612345" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -255,12 +255,12 @@
                         <i class="post-share"></i>
                         <span>&#x5206;&#x4EAB;:</span>
                                                                     <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://IGhorse.github.io/post/hello-gridea/"><i class="fa fa-qrcode"></i></a>
-                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://IGhorse.github.io/post/hello-gridea/&sharesource=qzone&title=Hello Gridea&pics=https://IGhorse.github.io/images/avatar.png?v=1582888929296&summary=&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://IGhorse.github.io/post/hello-gridea/&sharesource=qzone&title=Hello Gridea&pics=https://IGhorse.github.io/images/avatar.png?v=1582889612345&summary=&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
 ✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
 "><i class="fa fa-qq"></i></a>
                                                                     <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://IGhorse.github.io/post/hello-gridea/&sharesource=weibo&title=Hello Gridea + " - " + &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
 ✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
-&pic="https://IGhorse.github.io/images/avatar.png?v=1582888929296 "><i class="fa fa-weibo "></i></a>
+&pic="https://IGhorse.github.io/images/avatar.png?v=1582889612345 "><i class="fa fa-weibo "></i></a>
 
                                                                     </span>
                                                                     
@@ -338,9 +338,28 @@
                         document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
                     </script>
         </footer>
+		<div id="landlord" style="left:5px;bottom:0px;">
+			<div class="message" style="opacity:0"></div>
+			<canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+			<div class="live_talk_input_body">
+				<div class="live_talk_input_name_body">
+					<input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
+				</div>
+				<div class="live_talk_input_text_body">
+						<input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
+					<button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+				</div>
+			</div>
+			<input name="live_talk" id="live_talk" value="1" type="hidden" />
+			<div class="live_ico_box">
+				<div class="live_ico_item type_info" id="showInfoBtn"></div>
+				<div class="live_ico_item type_talk" id="showTalkBtn"></div>
+				<div class="live_ico_item type_quit" id="hideButton"></div>
+				<input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+		</div>
+</div>
+<div id="open_live2d">召唤伊斯特瓦尔</div>
         
-            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
-            
                 <script>
                     
 
@@ -366,8 +385,6 @@
                     LoadPlayer();
                     
                     
-                    loadlive2d();
-                    
                     
                     hitokoto();
                     
@@ -378,7 +395,7 @@
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1582888929296);
+                    newDate.setTime(1582889612345);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
@@ -426,6 +443,13 @@
                         tpwidget("show");
                     </script>
                     
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+var message_Path = '/live2d/';//资源目录，如果目录不对请更改
+var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
+</script>
+<script type="text/javascript" src="live2d/js/live2d.js"></script>
+<script type="text/javascript" src="live2d/js/message.js"></script>
         </div>
 </body>
 <script>
